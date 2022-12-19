@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-neuvector
-  namespace: hello-neuvector
 spec:
   replicas: 3
   selector:
