@@ -24,7 +24,7 @@ items:             #similar as k8s object namespaces, services, pods,ReplicaSets
     process_profile:              
       baseline: zero-drift
     target:
-      policymode: monitor                    # we can set this policy mode to Discover ,monitor ,protect
+      policymode: Monitor                    # we can set this policy mode to Discover ,monitor ,protect
       selector:                                        
         comment: ""
         criteria:                              # similar to that network 
