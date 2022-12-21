@@ -1,0 +1,43 @@
+apiVersion: v1     #Which version of the neuvector API you're using to create this object
+items:             #similar as k8s object namespaces, services, pods,ReplicaSets, Deployments 
+- apiVersion: neuvector.com/v1       
+  kind: NvSecurityRule                          
+  metadata:               #data about data 
+    name: nv.mydeployments-1.default    #nv.deployment name .namespace (default,kube-system,cattle-system,we can create custom even namespace)
+    namespace: default
+  spec:                              #what all security we are apploying for this perticular deployment)   
+    dlp:
+      settings: []
+      status: true                        
+    egress: []
+    file: []
+    ingress: []
+    process:                              #this comes under process profile rule
+    - action: allow                        #it may be allow or deny 
+      allow_update: false                    #true or false
+      name: httpd                            #image name
+      path: /usr/local/apache2/bin/httpd         #this is apache2 is a package 
+    - action: allow                                #allow or deny
+      allow_update: false                          #if new updates will come we can set to True or false
+      name: pause                                   #this is 
+      path: /pause                                          
+    process_profile:              
+      baseline: zero-drift
+    target:
+      policymode: Discover                    # we can set this policy mode to Discover ,monitor ,protect
+      selector:                                        
+        comment: ""
+        criteria:                              # similar to that network 
+        - key: service
+          op: =
+          value: mydeployments-1.default         #service name.namespacename  
+        - key: domain
+          op: =
+          value: default
+        name: nv.mydeployments-1.default
+        original_name: ""
+    waf:                                      #firewalls
+      settings: []
+      status: true
+kind: List                                 
+metadata: null
