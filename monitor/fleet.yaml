@@ -3,4 +3,4 @@ helm:
   releaseName: neuvector-monitoring
   repo: https://neuvector.github.io/neuvector-helm
   chart: monitor
-  version: 2.4.0
+  version: 2.2.2
