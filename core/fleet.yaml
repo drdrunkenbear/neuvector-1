@@ -3,14 +3,14 @@ defaultNamespace: neuvector
 helm:
   chart: core
   repo: https://neuvector.github.io/neuvector-helm
-  version: 2.2.2
+  version: 2.2.0 
   releaseName: neuvector
   values:
     registry: docker.io 
     tag: 5.0.0
 
     controller:
-      replicas: 3
+      replicas: 1
 
     manager:
       svc:
@@ -18,8 +18,7 @@ helm:
 
     cve:
       scanner:
-        replicas: 3
+        replicas: 1
 
     k3s:
-      enabled: true
-    
+      enabled: false
