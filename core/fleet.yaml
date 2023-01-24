@@ -28,6 +28,6 @@ helm:
     k3s:
       enabled: false
     crdwebhook:
-      enabled: false
+      enabled: true
       type: ClusterIP   
     
