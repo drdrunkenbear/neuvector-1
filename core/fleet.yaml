@@ -13,15 +13,14 @@ helm:
       replicas: 3
 
     manager:
-      image:
-        repository: neuvector/manager
+      
       svc:
         type: NodePort
         loadBalancerIP:
         annotations: {}
       route:
     cve:
-      updater:
+      
       scanner:
         replicas: 3
 
