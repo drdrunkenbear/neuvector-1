@@ -1,6 +1,0 @@
-defaultNamespace: neuvector
-helm:
-  releaseName: neuvector-monitoring
-  repo: https://neuvector.github.io/neuvector-helm
-  chart: monitor
-  version: 2.2.2
