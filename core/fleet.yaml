@@ -13,14 +13,10 @@ helm:
       replicas: 1
 
     manager:
-      
       svc:
-        type: NodePort
-        loadBalancerIP:
-        annotations: {}
-      route:
+        type: LoadBalancer
+
     cve:
-      
       scanner:
         replicas: 1
 
