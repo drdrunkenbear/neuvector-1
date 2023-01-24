@@ -1,19 +1,20 @@
 defaultNamespace: neuvector
 
 helm:
-  chart: core
-  repo: https://neuvector.github.io/neuvector-helm
-  version: 2.2.0 
-  releaseName: neuvector
-  values:
-    registry: docker.io 
-    tag: 5.1.0
-    oem:
-    imagePullSecrets:
-    psp: false
-    rbac: true
-    serviceAccount: default
-  controller:
+chart: core
+repo: https://neuvector.github.io/neuvector-helm
+version: 2.2.0 
+releaseName: neuvector
+
+registry: docker.io
+tag: 5.1.0
+oem:
+imagePullSecrets:
+psp: false
+rbac: true
+serviceAccount: default
+
+controller:
   # If false, controller will not be installed
   enabled: true
   annotations: {}
@@ -377,5 +378,3 @@ admissionwebhook:
 crdwebhook:
   enabled: true
   type: ClusterIP
-  
-   
