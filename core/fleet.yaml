@@ -11,14 +11,17 @@ helm:
 
     controller:
       replicas: 3
+     
+    enforcer:
 
     manager:
       svc:
-        type: LoadBalancer
+        type: NodePort               #LoadBalancer
 
     cve:
       scanner:
         replicas: 3
-
+    docker:
+      path: /var/run/docker.sock
     k3s:
       enabled: false
