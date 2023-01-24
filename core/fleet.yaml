@@ -7,10 +7,10 @@ helm:
   releaseName: neuvector
   values:
     registry: docker.io 
-    tag: 5.1.0
+    tag: 5.0.0
 
     controller:
-      replicas: 3
+      replicas: 1
 
     manager:
       
@@ -22,11 +22,8 @@ helm:
     cve:
       
       scanner:
-        replicas: 3
+        replicas: 1
 
     k3s:
       enabled: false
-    crdwebhook:
-      enabled: true
-      type: ClusterIP   
     
