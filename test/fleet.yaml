@@ -3,13 +3,13 @@ helm:
     tag: 5.1.0
 
     controller:
-      replicas: 1
+      replicas: 3
       ranchersso:
         enabled: false
 
     cve:
       scanner:
-        replicas: 1
+        replicas: 3
 
     k3s:
       enabled: false
