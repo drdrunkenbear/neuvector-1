@@ -1,6 +1,0 @@
-defaultNamespace: neuvector #cattle-neuvector-system
-helm:
-  releaseName: neuvector
-  chart: monitor
-  repo: https://neuvector.github.io/neuvector-helm
-  version:  2.2.0 
