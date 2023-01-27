@@ -20,7 +20,7 @@ helm:
 
     cve:
       scanner:
-        replicas: 1
+        replicas: 3
 
     k3s:
       enabled: false
