@@ -16,7 +16,7 @@ helm:
 
     manager:
       svc:
-        type: NodePort
+        type: LoadBalancer
 
     cve:
       scanner:
