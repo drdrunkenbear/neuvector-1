@@ -1,4 +1,4 @@
-defaultNamespace: neuvector
+defaultNamespace: cattle-neuvector-system          /neuvector
 
 helm:
   chart: core
