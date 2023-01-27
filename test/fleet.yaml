@@ -3,7 +3,7 @@ helm:
     tag: 5.0.4         #5.0.0
 
     controller:
-      replicas: 1
+      replicas: 3
       ranchersso:
         enabled: false
 
