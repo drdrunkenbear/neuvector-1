@@ -12,7 +12,7 @@ helm:
     tag: 5.0.0
 
     controller:
-      replicas: 3
+      replicas: 1
 
     manager:
       svc:
@@ -20,7 +20,7 @@ helm:
 
     cve:
       scanner:
-        replicas: 3
+        replicas: 1
 
     k3s:
       enabled: false
