@@ -1,5 +1,4 @@
-defaultNamespace: default         
-
+defaultNamespace: cattle-neuvector-system
 helm:
   chart: core
   repo: https://neuvector.github.io/neuvector-helm
