@@ -9,7 +9,7 @@ helm:
   releaseName: neuvector
   values:
     registry: docker.io 
-    tag: 5.0.4 #5.0.0
+    tag: 5.0.0 #5.0.4 
 
     controller:
       replicas: 3
