@@ -2,7 +2,7 @@ apiVersion: neuvector.com/v1
 kind: NvSecurityRule
 metadata:
   name: nv.hello-neuvector.hello-neuvector
-  namespace: cattle-neuvector-system            #hello-neuvector
+  namespace: cattle-neuvector-system #hello-neuvector
 spec:
   egress: []
   file: []
@@ -44,4 +44,3 @@ spec:
   waf:
     settings: []
     status: true
-
