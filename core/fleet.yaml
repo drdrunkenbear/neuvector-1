@@ -1,4 +1,4 @@
-defaultNamespace: neuvector         
+defaultNamespace: default         
 
 helm:
   chart: core
