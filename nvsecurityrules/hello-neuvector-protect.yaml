@@ -1,4 +1,4 @@
-  apiVersion: neuvector.com/v1
+apiVersion: neuvector.com/v1
 kind: NvSecurityRule
 metadata:
   name: nv.hello-neuvector.hello-neuvector
