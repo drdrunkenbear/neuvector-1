@@ -5,7 +5,7 @@ helm:
     controller:
       replicas: 3
       ranchersso:
-        enabled: false
+        enabled: true
 
     cve:
       scanner:
