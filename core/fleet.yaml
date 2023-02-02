@@ -11,8 +11,7 @@ helm:
 
     controller:
       replicas: 3
-      ranchersso:
-        enabled: true
+
 
     manager:
       svc:
